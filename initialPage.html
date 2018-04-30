@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+    <head>
+        <title>WebFitness- O site para sua saúde</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="/src/css/styles.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+        
+    </head>
+    
+    <body>
+        <header>
+            <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+                <a class="navbar-brand" href="initialPage.html">
+                    <img src="assets/icons/gym.png" alt="logo" style="width:40px;" class="d-inline-block align-middle mr-2">WebFitness
+                </a>
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMenu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarMenu">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" style="text-align: center">Início</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" style="text-align: center">Nossos serviços</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link button btn-success" role="button" href="#" style="text-align: center; color: white" data-toggle="modal" data-target="#modalCadastro">Entrar/Cadastrar-se</a>
+                            <div class="modal fade" id="modalCadastro" tabindex="-1" role="dialog" aria-labelledby="tituloModal" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h4 class="modal-title" id="tituloModal">Entrar/Cadastrar-se</h4>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <h5 class="mb-4"><center>Já tem uma conta? Faça login!</center></h5>
+                                            <form>
+                                                <div class="form-row">
+                                                    <div class="form group col-sm-12 mb-2">
+                                                        <label for="nameField">Email:</label>
+                                                        <input type="email" class="form-control" id="emailField" placeholder="Email">
+                                                    </div>
+                                                </div>
+                                                <div class="form-row">
+                                                    <div class="form group col-sm-12 mb-2">
+                                                        <label for="nameField">Senha:</label>
+                                                        <input type="password" class="form-control" id="passwordField" placeholder="Senha">
+                                                    </div>
+                                                </div>
+                                                <button type="button" class="btn btn-success">Entrar</button>
+                                            </form>
+                                            <hr>
+                                            <h5>Ainda não está cadastrado? Crie uma conta <a href="formCadastro.html">clicando aqui</a></h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+
+                </div>
+            </nav>
+        </header>
+       
+        <div class="container-fluid">
+            <div class="carousel slide my-2"  data-ride="carousel" id="slidePrincipal">
+                <ul class="carousel-indicators">
+                    <li data-target="#slidePrincipal" data-slide-to="0" class="active"></li>
+                    <li data-target="#slidePrincipal" data-slide-to="1"></li>
+                    <li data-target="#slidePrincipal" data-slide-to="2"></li>
+                </ul>
+                
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img class="d-block img-fluid d-none" src="assets/imgs/imagem1.jpg" alt="slide1">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Defina seu corpo de maneira simples</h5>
+                            <p>Escolha onde quer treinar: na academia, em um parque ou até mesmo em casa!</p>
+                        </div>
+                    </div>
+                    
+                    <div class="carousel-item">
+                        <img class="d-block img-fluid" src="assets/imgs/imagem2.jpg" alt="slide2">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Aumente sua resistência</h5>
+                            <p>Treinos a partir de 15 que você pode adaptar a sua rotina.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="carousel-item">
+                        <img class="d-block img-fluid" src="assets/imgs/imagem3.jpg" alt="slide3">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Saúde garantida</h5>
+                            <p>Melhore sua saúde de maneira fácil, e o melhor, de graça!</p>
+                        </div>
+                    </div>
+                    
+                </div>
+                
+                <a class="carousel-control-prev" href="#slidePrincipal" data-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </a>
+                <a class="carousel-control-next" href="#slidePrincipal" data-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </a>
+                
+            </div>
+            
+        </div>
+        
+        <section class="mb-3">
+            <h1 class="display-4 mb-4"><center>Sua evolução só depende de você!</center></h1>
+            
+            <div class="container-fluid mb-2">
+                <div class="row">
+                    <div class="col-sm-3">
+                        <div class="d-inline-block card border-0" style="width:300px">
+                            <img class="card-img-top" src="assets/icons/calendar.jpg" alt="imgCard1" style="width:100%">
+
+                            <div class="card-body">
+                                <h4 class="card-title">Treinos únicos para você</h4>
+                                <p class="card-text">Criamos exercícios de acordo com o seu objetivo!</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-sm-3">
+                        <div class="d-inline-block card border-0" style="width:300px">
+                            <img class="card-img-top" src="assets/icons/diet.png" alt="imgCard2" style="width:100%">
+
+                            <div class="card-body">
+                                <h4 class="card-title">Dicas de dietas para melhores resultados</h4>
+                                <p class="card-text">As melhores dietas para o auxiliar a atingir seus objetivos!</p>
+                            </div>
+                        </div>
+                   </div>
+                   
+                    <div class="col-sm-3">
+                        <div class="d-inline-block card border-0" style="width:300px">
+                            <img class="card-img-top" src="assets/icons/objective.png" alt="imgCard3" style="width:100%">
+
+                            <div class="card-body">
+                                <h4 class="card-title">Sempre de olho nas metas</h4>
+                                <p class="card-text">Seu progresso é atualizado sempre que você conclui um treino.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-sm-3">
+                        <div class="d-inline-block card border-0" style="width:300px">
+                            <img class="card-img-top" src="assets/icons/graphic.png" alt="imgCard4" style="width:100%">
+
+                            <div class="card-body">
+                                <h4 class="card-title">Acompanhe sua evolução</h4>
+                                <p class="card-text">Gráficos que mostram sua evolução a partir dos treinos concluídos!</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+        
+        <section>
+            <div class="jumbotron jumbotron-fluid">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 text-center">
+                            <h1 class="display-4">Um pouco do que fazemos</h1>
+                            <p class="lead">Dê uma olhada nas dietas, exercícios que oferecemos a nossos usuários e como os acompanhamos.</p>
+                            <hr>
+                        </div>
+                    </div>
+                    
+                    <div class="row">
+                        <div class="col-12">
+                            <ul class="nav nav-pills justify-content-center mb-3" id="informacoes" role="tablist">
+                                <li nav item>
+                                    <a class="nav-link active" id="conteudo1" data-toggle="pill" href="#informacao1">Dietas</a>
+                                </li>
+                                
+                                <li nav item>
+                                    <a class="nav-link" id="conteudo2" data-toggle="pill" href="#informacao2">Exercícios</a>
+                                </li>
+                                
+                                <li nav item>
+                                    <a class="nav-link" id="conteudo3" data-toggle="pill" href="#informacao3">Acompanhamento</a>
+                                </li>
+                            </ul>
+                            
+                            <div class="tab-content" id="conteudoMenu">
+                                <div class="tab-pane fade show active" id="informacao1" role="tabpanel">
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <div class="embed-responsive embed-responsive-16by9">
+                                                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/N7b8DyPsIck"></iframe>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="col-sm-6">
+                                            <p>Assista e esse vídeo e tenha uma base de como nós realizamos nossas dietas especiais para cada um e trabalhamos duro para que funcionem de maneira correta.</p>
+                                        </div>
+                                        
+                                    </div>
+                                    
+                                </div>
+                                
+                                <div class="tab-pane fade" id="informacao2" role="tabpanel">
+                                    <div class="embed-responsive embed-responsive-16by9">
+                                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/lE3S82Z7zHc"></iframe>
+                                    </div>
+                                    
+                                    <div class="col-sm-6">
+                                        <p>Esse é somente um dos exercícios que proporcionamos a nossos usuários. Cortesia da casa, deixamos a você para que reflita o quanto pode ser saudável conosco.</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="tab-pane fade" id="informacao3" role="tabpanel">
+                                    <div class="embed-responsive embed-responsive-16by9">
+                                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/FyF5YCnMYBM"></iframe>
+                                    </div>
+                                    
+                                    <div class="col-sm-6">
+                                        <p>Como diz o vídeo, é preciso um acompanhamento nos exercícios. Aqui, fazemos o possível para que você faça os exercícios e se alimente de forma correta.</p>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        
+        <footer>
+            <nav class="d-block navbar navbar-expand-sm bg-dark navbar-dark">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" style="text-align: center">Sobre a WebFitness</a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" style="text-align: center">Fale conosco</a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" style="text-align: center"><img src="assets/icons/facebook.png" alt="Facebook"></a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" style="text-align: center"><img src="assets/icons/instagram.png" alt="Instagram"></a>
+                    </li>
+                </ul>
+            </nav>
+        </footer>
+        
+    </body>
+</html>

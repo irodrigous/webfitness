@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+    <head>
+        <title>WebFitness- O site para sua saúde</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="/src/css/styles.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+        
+    </head>
+    
+    <body>
+       
+       <header>
+            <nav class="navbar navbar-expand-sm bg-dark navbar-dark sticky-top">
+                <a class="navbar-brand" href="initialPage.html">
+                    <img src="assets/icons/gym.png" alt="logo" style="width:40px;" class="d-inline-block align-middle mr-2">WebFitness
+                </a>
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMenu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarMenu">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="initialPage.html" style="text-align: center">Início</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" style="text-align: center">Nossos serviços</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <div class="container col-md-5 col-md-5 col-md-offset-5 my-5 mb-5">
+            <form>
+                <div class="form-row">
+                    <h1><center>Cadastro: </center></h1>
+                </div>
+                <div class="form-row">
+                    <div class="form group col-sm-6 mb-2">
+                        <label for="nameField">Nome:</label>
+                        <input type="text" class="form-control" id="nameField" placeholder="Nome">
+                    </div>
+                    <div class="form group col-sm-6">
+                        <label for="secondNameField">Sobrenome:</label>
+                        <input type="text" class="form-control" id="secondNameField" placeholder="Sobrenome">
+                    </div>
+                </div>
+                
+                <div class="form-row">
+                    <div class="form group col-sm-4">
+                        <label for="birthdayField">Data de Nascimento:</label>
+                        <input type="date" class="form-control" id="birthdayField" placeholder="DD/MM/AAAA">
+                    </div>
+                    <div class="form-group col-sm-8">
+                        <label for="emailField">Email: </label>
+                        <input type="email" class="form-control" id="emailField" placeholder="example@example.com">
+                    </div>
+                </div>
+                
+                <div class="form-row">
+                    <div class="form-group col-sm-6">
+                        <label for="passwordField">Senha:</label>
+                        <input type="password" class="form-control" id="passswordField" placeholder="Senha">
+                    </div>
+                    <div class="form-group col-sm-6">
+                        <label for="confirmPasswordField">Confirmar Senha:</label>
+                        <input type="password" class="form-control" id="confirmPasswordField" placeholder="Confirme sua senha">
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-danger">Cancelar</button>
+                <button type="submit" class="btn btn-success mr-2">Continuar</button>
+            </form>
+        </div>
+        
+        <footer>
+            <nav class="d-block navbar navbar-expand-sm bg-dark navbar-dark">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" style="text-align: center">Sobre a WebFitness</a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" style="text-align: center">Fale conosco</a>
+                    </li>
+                    
+                </ul>
+            </nav>
+        </footer>
+    </body>
+</html>
